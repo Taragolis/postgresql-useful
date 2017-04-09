@@ -1,5 +1,4 @@
-#!/bin/sh
-set -e
+#!/bin/sh -e
 
 #
 #  Copyright 2017 Andrey Anshin
@@ -16,6 +15,11 @@ set -e
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# You can run this script directly from github as root like this:
+#   sudo sh -c "$(wget https://raw.githubusercontent.com/Taragolis/postgresql-useful/master/pglogical/ubuntu-trusty-install.sh -qO -)"
+# or
+#   sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/Taragolis/postgresql-useful/master/pglogical/ubuntu-trusty-install.sh)"
 
 echo
 if [ "$(id -u)" != "0" ]; then
